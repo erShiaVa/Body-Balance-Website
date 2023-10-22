@@ -1,0 +1,480 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
+/** main **/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #FBFBFB;
+  color: #303651;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: font-weight 0.1s ease-in;
+}
+li:hover {
+  font-weight: 600;
+}
+
+a {
+  color: #303651;
+}
+
+h4 {
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+}
+
+.button {
+  background-color: #F1C9C4;
+  color: #303651;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 1rem 1.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease-in;
+}
+.button:hover {
+  background-color: #DFA59E;
+}
+@media (max-width: 834px) {
+  .button {
+    font-size: 0.65rem;
+  }
+}
+
+.heading-one {
+  font-size: 3.7rem;
+  padding-bottom: 2.25rem;
+}
+@media (max-width: 1024px) {
+  .heading-one {
+    font-size: 3.25rem;
+  }
+}
+
+.heading-two {
+  font-size: 2.4rem;
+  padding-bottom: 1.85rem;
+}
+@media (max-width: 1024px) {
+  .heading-two {
+    font-size: 1.5rem;
+  }
+}
+
+.heading-three {
+  font-size: 1.15rem;
+  color: #697089;
+  text-transform: uppercase;
+  letter-spacing: 0.045rem;
+  padding-bottom: 0.25rem;
+}
+
+.paragraph {
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.75rem;
+  padding-bottom: 2.25rem;
+}
+@media (max-width: 834px) {
+  .paragraph {
+    font-size: 0.85rem;
+  }
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 1.85rem 0;
+}
+@media (max-width: 1280px) {
+  .container {
+    padding: 1.85rem 1.85rem;
+  }
+}
+
+/** navbar **/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .navbar__logo {
+  display: flex;
+  align-items: center;
+}
+.navbar .navbar__logo img {
+  width: 80px;
+}
+.navbar .navbar__items {
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+}
+
+/** hero **/
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.hero img {
+  width: 800px;
+  filter: drop-shadow(2px 8px 28px rgba(0, 0, 0, 0.2));
+}
+@media (max-width: 1024px) {
+  .hero img {
+    width: 500px;
+  }
+}
+.hero .hero__content {
+  width: 38rem;
+}
+
+/** pregnant **/
+.pregnant {
+  background-image: url(./assets/pregnant-woman.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.pregnant .pregnant__content {
+  margin-top: 17.5rem;
+  margin-bottom: 17.5rem;
+  padding-left: 14rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media (max-width: 1440px) {
+  .pregnant .pregnant__content {
+    padding-left: 5rem;
+    margin-top: 13.5rem;
+    margin-bottom: 13.5rem;
+  }
+}
+@media (max-width: 1280px) {
+  .pregnant .pregnant__content {
+    padding-left: 2rem;
+    margin-top: 10.5rem;
+    margin-bottom: 10.5rem;
+  }
+}
+@media (max-width: 1024px) {
+  .pregnant .pregnant__content {
+    margin-top: 9rem;
+    margin-bottom: 9rem;
+  }
+}
+@media (max-width: 834px) {
+  .pregnant .pregnant__content {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+.pregnant .pregnant__content .pregnant__text {
+  width: 44rem;
+}
+@media (max-width: 1024px) {
+  .pregnant .pregnant__content .pregnant__text {
+    width: 32rem;
+  }
+}
+
+/** courses **/
+.courses {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  .courses {
+    gap: 2.5rem;
+  }
+}
+@media (max-width: 834px) {
+  .courses {
+    flex-wrap: wrap;
+    flex-flow: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+.courses .courses__big-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.25rem;
+  text-align: center;
+  padding: 2.5rem 0;
+}
+.courses .courses__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 214px;
+  height: 136px;
+}
+.courses .courses__box .three {
+  width: 215px;
+  height: 89px;
+}
+.courses .courses__img img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.courses .img-1 {
+  z-index: 100;
+}
+
+/** meditation **/
+.meditation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.25rem;
+}
+@media (max-width: 834px) {
+  .meditation {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.meditation .meditation__content {
+  width: 35rem;
+}
+.meditation .meditation__img img {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+}
+
+/** voucher **/
+.voucher {
+  background: rgba(234, 233, 231, 0.84);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5rem;
+  margin: 3.5rem 0;
+}
+.voucher .voucher__img {
+  width: 100%;
+  height: auto;
+}
+.voucher .voucher__content {
+  padding-right: 13.5rem;
+}
+@media (max-width: 1440px) {
+  .voucher .voucher__content {
+    padding-right: 4rem;
+  }
+}
+
+/** teacher **/
+.teacher__heading {
+  text-align: center;
+  max-width: 34rem;
+  margin: 0 auto;
+}
+
+.teacher__boxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  .teacher__boxes {
+    gap: 2.25rem;
+  }
+}
+@media (max-width: 834px) {
+  .teacher__boxes {
+    flex-flow: column;
+  }
+}
+.teacher__boxes .teacher__box {
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.teacher__boxes .teacher__box .teacher__img img {
+  width: 100%;
+  height: auto;
+}
+.teacher__boxes .teacher__box .teacher__name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.85rem 0;
+}
+.teacher__boxes .teacher__box .teacher__name .teach-p {
+  padding-bottom: 0;
+}
+
+/** video **/
+.video {
+  background-color: #F1C9C4;
+  padding: 2.5rem 0;
+  margin: 3.5rem 0;
+}
+.video .video__all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  .video .video__all {
+    gap: 2.25rem;
+  }
+}
+@media (max-width: 834px) {
+  .video .video__all {
+    gap: 2.25rem;
+    flex-flow: column;
+  }
+}
+.video .video__all .video__video {
+  position: relative;
+}
+.video .video__all .video__video .play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 3rem;
+}
+.video .video__all .video__video img {
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 0.25rem;
+  width: 100%;
+  height: auto;
+}
+.video .video__all .video__content {
+  width: 34rem;
+}
+@media (max-width: 834px) {
+  .video .video__all .video__content {
+    width: 40rem;
+  }
+}
+.video .video__all .video__content .video__social-icons a {
+  padding-right: 1rem;
+}
+
+/** contact **/
+.contact {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 1.85rem 0;
+}
+@media (max-width: 1280px) {
+  .contact {
+    padding: 1.85rem 1.85rem;
+  }
+}
+.contact .contact__heading {
+  text-align: center;
+  width: 35rem;
+  margin: 0 auto;
+}
+.contact .contact__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.15rem;
+}
+.contact .contact__form input[type=text],
+.contact .contact__form input[type=tel],
+.contact .contact__form textarea {
+  max-width: 100%;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border: 0.5px solid #EEEDEC;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  padding: 1rem;
+}
+.contact .contact__form input[type=text]::-moz-placeholder, .contact .contact__form input[type=tel]::-moz-placeholder, .contact .contact__form textarea::-moz-placeholder {
+  color: #C7CBD8;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  font-size: 0.75rem;
+}
+.contact .contact__form input[type=text]::placeholder,
+.contact .contact__form input[type=tel]::placeholder,
+.contact .contact__form textarea::placeholder {
+  color: #C7CBD8;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  font-size: 0.75rem;
+}
+.contact .contact__form input[type=text]:focus,
+.contact .contact__form input[type=tel]:focus,
+.contact .contact__form textarea:focus {
+  outline: none;
+  color: #303651;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.05rem;
+}
+.contact .contact__form textarea {
+  height: 15rem;
+}
+
+.contact__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2.95rem 0;
+}
+
+/** footer **/
+.footer {
+  background-color: #F1F2F4;
+  padding: 2.25rem 0;
+}
+.footer .footer__all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer__all .footer__box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.footer .footer__all .footer__box .para-footer {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.footer .footer__all .footer__box .footer__social-icons a {
+  padding-right: 0.5rem;
+}/*# sourceMappingURL=style.css.map */
